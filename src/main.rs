@@ -5,6 +5,7 @@ use crate::day_4::day_4;
 use crate::day_5::day_5;
 use crate::day_6::day_6;
 use crate::day_7::day_7;
+use crate::day_8::day_8;
 use std::env;
 
 pub mod day_1;
@@ -14,6 +15,7 @@ pub mod day_4;
 pub mod day_5;
 pub mod day_6;
 pub mod day_7;
+pub mod day_8;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -26,6 +28,7 @@ fn main() {
         "5" => day_5(),
         "6" => day_6(),
         "7" => day_7(),
+        "8" => day_8(),
         _ => panic!("day not implemented yet")
     }
 }
